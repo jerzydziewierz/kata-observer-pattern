@@ -1,0 +1,46 @@
+---
+event: '1'
+sender: data
+---
+event: processed:1, len=1
+sender: step1
+---
+event: processed:processed:1, len=1, len=18
+sender: step2
+---
+event: processed:processed:processed:1, len=1, len=18, len=36
+sender: step3
+---
+event: 'time: 23:00:24'
+sender: timer
+---
+event: '2'
+sender: data
+---
+event: processed:2, len=1
+sender: step1
+---
+event: processed:processed:2, len=1, len=18
+sender: step2
+---
+event: processed:processed:processed:2, len=1, len=18, len=36
+sender: step3
+---
+event: 'time: 23:00:25'
+sender: timer
+---
+event: '{''some'': ''data''}'
+sender: data
+---
+event: 'processed:{''some'': ''data''}, len=16'
+sender: step1
+---
+event: 'processed:processed:{''some'': ''data''}, len=16, len=34'
+sender: step2
+---
+event: 'processed:processed:processed:{''some'': ''data''}, len=16, len=34, len=52'
+sender: step3
+---
+event: 'time: 23:00:26'
+sender: timer
+---
