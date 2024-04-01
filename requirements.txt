@@ -1,0 +1,7 @@
+pyyaml
+attrs
+pytest
+trio
+trio-parallel
+trio-typing
+trio-websocket
