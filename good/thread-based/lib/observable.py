@@ -22,8 +22,9 @@ class Observable(object):
 
     def register_observer(self, observer):
         """
-        registers an observer to receive notifications from this observable.
-        the observer must implement the "notify" method. It must be exactly the method named "notify".
+        Registers an observer to receive notifications from this observable.
+        The observer must implement the "notify" method.
+        It must be exactly the method named "notify".
         """
         self.observers.append(observer)
 
@@ -64,3 +65,4 @@ class Observable(object):
         self.notify(self, Ellipsis)  # unblock the incoming_event_thread
         self.internal_event_thread.join()
         self.incoming_event_thread.join()
+
